@@ -10,5 +10,9 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
+license = "MIT"
+license-files = ["LICENSE*"]
 
-
+[project.urls]
+Homepage = "https://github.com/NeonOrangeOrange/hello-NOO"
+Homepage = "https://github.com/NeonOrangeOrange/hello-NOO/issues"
