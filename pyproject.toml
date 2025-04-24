@@ -15,4 +15,4 @@ license-files = ["LICENSE*"]
 
 [project.urls]
 Homepage = "https://github.com/NeonOrangeOrange/hello-NOO"
-Homepage = "https://github.com/NeonOrangeOrange/hello-NOO/issues"
+Issues = "https://github.com/NeonOrangeOrange/hello-NOO/issues"
