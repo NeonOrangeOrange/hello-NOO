@@ -17,6 +17,7 @@ license-files = ["LICENSE*"]
 
 [project.optional-dependencies]
 dev = ["build", "twine"]
+docs = ["mkdocs"]
 
 [project.urls]
 Homepage = "https://github.com/NeonOrangeOrange/hello-NOO"

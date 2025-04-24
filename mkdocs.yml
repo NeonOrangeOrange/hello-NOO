@@ -1,0 +1,9 @@
+site_name: hello-NOO Python Package
+site_url: https://neonorangeorange.github.io/hello-NOO/ 
+repo_url: https://github.com/NeonOrangeOrange/hello-NOO
+
+theme:
+  name: readthedocs
+
+nav:
+  - "Home": index.md

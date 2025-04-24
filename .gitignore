@@ -7,6 +7,9 @@ venv
 __pycache__/
 
 *.egg-info
+*.tar.gz
+*.whl
 
 build/
 dist/
+docs/
