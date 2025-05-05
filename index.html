@@ -44,17 +44,9 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#install">Install</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#development-things-to-remember">Development: Things to remember</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#1-make-a-source-distribution">1. Make a source distribution</a>
+    <li class="toctree-l2"><a class="reference internal" href="#building">Building</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#2-make-a-wheel">2. Make a wheel</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#3-check-with-twine">3. Check with twine</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#4-upload-to-pypi">4. Upload to PyPi</a>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#upload-to-pypi">Upload to PyPi</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#other-notes">Other Notes</a>
     </li>
@@ -87,42 +79,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hello-noo-python-package">hello-NOO Python Package</h1>
+                <hr />
+<h1 id="hello-noo-python-package">hello-NOO Python Package</h1>
 <p>This is an example repository for a python package, for my own reference.</p>
-<p>PyPi Page: <a href="">https://pypi.org/project/hello-NOO/</a>
-GitHub Pages: <a href="">https://neonorangeorange.github.io/hello-NOO/</a>
-GitHub Repository: <a href="">https://github.com/NeonOrangeOrange/hello-NOO</a></p>
+<hr />
+<p>PyPI:</p>
+<p><a href="https://pypi.org/project/hello-NOO/"><img alt="PyPi Version" src="https://img.shields.io/pypi/v/hello-NOO.svg" /></a>
+<a href="https://pypi.org/project/hello-NOO/"><img alt="PyPi Version" src="https://img.shields.io/pypi/dm/hello-NOO.svg" /></a></p>
+<p>GitHub: </p>
+<p><a href="https://github.com/NeonOrangeOrange/hello-NOO"><img alt="GitHub Tag" src="https://img.shields.io/github/v/tag/NeonOrangeOrange/hello-NOO" /></a>
+<a href="https://neonorangeorange.github.io/hello-NOO/"><img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/NeonOrangeOrange/hello-NOO/total" /></a>
+<a href="https://github.com/NeonOrangeOrange/hello-NOO/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/NeonOrangeOrange/hello-NOO" /></a>
+<a href="https://neonorangeorange.github.io/hello-NOO/"><img alt="GitHub Pages Website" src="https://img.shields.io/website?url=http%3A//neonorangeorange.github.io/hello-NOO/" /></a></p>
 <hr />
 <h2 id="install">Install</h2>
 <p>Not that you would want to, but you can install with </p>
 <pre><code>pip install hello-NOO
 </code></pre>
+<p>Developer install</p>
+<ol>
+<li>Clone this repository and <code>cd</code> into it.</li>
+<li>Create a virtual environment: <code>python3 -m venv .venv</code></li>
+<li>Activate the virtual environment: (linux) <code>source .venv/bin/activate</code></li>
+<li>Install the package locally: (linux) <code>pip install -e ./[dev,docs]</code></li>
+</ol>
 <hr />
-<h2 id="development-things-to-remember">Development: Things to remember</h2>
-<h4 id="1-make-a-source-distribution">1. Make a source distribution</h4>
-<pre><code class="language-text">python -m build --sdist
+<h2 id="building">Building</h2>
+<pre><code class="language-bash"># Build a source distribution (stored in dist/)
+python -m build --sdist
+
+# Build a wheel (stored in dist/)
+python -m build --wheel
+
+# Run a test to check all the builds in dist
+twine check dist/*
 </code></pre>
-<p>This makes a <code>*tar.gz</code> in the <code>dist/</code> folder</p>
-<h4 id="2-make-a-wheel">2. Make a wheel</h4>
-<pre><code class="language-text">python -m build --wheel
-</code></pre>
-<p>This makes a <code>*.whl</code> in the <code>dist/</code> folder</p>
-<h4 id="3-check-with-twine">3. Check with twine</h4>
-<pre><code class="language-text">twine check dist/*
-</code></pre>
-<p>Checks the files in the <code>dist/</code> folder</p>
-<h4 id="4-upload-to-pypi">4. Upload to PyPi</h4>
+<hr />
+<h2 id="upload-to-pypi">Upload to PyPi</h2>
+<p>Once your account is set up, run</p>
 <pre><code class="language-text">twine upload --verbose --repository pypi dist/*
 </code></pre>
 <hr />
 <h2 id="other-notes">Other Notes</h2>
+<p>To reset the installation</p>
 <pre><code>pip freeze --exlucde hello-NOO | xargs pip uninstall -y
 pip uninstall hello-NOO
 </code></pre>
 <hr />
 <h2 id="resources">Resources</h2>
-<p><a href="">https://pypi.org/classifiers/</a></p>
-<p><a href="">https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#classifiers</a></p>
+<p><a href="https://pypi.org/classifiers/">https://pypi.org/classifiers/</a></p>
+<p><a href="https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#classifiers">https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#classifiers</a></p>
               
             </div>
           </div><footer>
@@ -170,5 +176,5 @@ pip uninstall hello-NOO
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-04-24 04:40:08.291359+00:00
+Build Date UTC : 2025-05-05 22:32:35.614645+00:00
 -->
