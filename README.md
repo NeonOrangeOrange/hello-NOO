@@ -4,7 +4,7 @@ This is an example repository for a python package, for my own reference.
 
 [PyPi Page](https://pypi.org/project/hello-NOO/)
 
-[GitHub Pages](https://neonorangeorange.github.io/hello-NOO/)
+[Documentation (GitHub Pages)](https://neonorangeorange.github.io/hello-NOO/)
 
 [GitHub Repository](https://github.com/NeonOrangeOrange/hello-NOO)
 
@@ -18,37 +18,34 @@ Not that you would want to, but you can install with
 pip install hello-NOO
 ```
 
+Developer install
+
+1. Clone this repository and `cd` into it.
+2. Create a virtual environment: `python3 -m venv .venv`
+3. Activate the virtual environment: (linux) `source .venv/bin/activate`
+4. Install the package locally: (linux) `pip install -e ./[dev,docs]`
 
 ---
 
-## Development: Things to remember
+## Building
 
-#### 1. Make a source distribution
-
-```text
+```bash
+# Build a source distribution (stored in dist/)
 python -m build --sdist
-```
 
-This makes a `*tar.gz` in the `dist/` folder
-
-
-#### 2. Make a wheel
-
-```text
+# Build a wheel (stored in dist/)
 python -m build --wheel
-```
 
-This makes a `*.whl` in the `dist/` folder
-
-#### 3. Check with twine
-
-```text
+# Run a test to check all the builds in dist
 twine check dist/*
 ```
 
-Checks the files in the `dist/` folder
 
-#### 4. Upload to PyPi
+---
+
+## Upload to PyPi
+
+Once your account is set up, run
 
 ```text
 twine upload --verbose --repository pypi dist/*
@@ -59,6 +56,8 @@ twine upload --verbose --repository pypi dist/*
 
 ## Other Notes
 
+To reset the installation
+
 ```
 pip freeze --exlucde hello-NOO | xargs pip uninstall -y
 pip uninstall hello-NOO
@@ -68,8 +67,8 @@ pip uninstall hello-NOO
 
 ## Resources
 
-[https://pypi.org/classifiers/]()
+<https://pypi.org/classifiers/>
 
-[https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#classifiers]()
+<https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#classifiers>
 
 
