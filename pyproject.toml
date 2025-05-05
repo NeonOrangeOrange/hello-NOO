@@ -1,6 +1,6 @@
 [project]
 name = "hello-NOO"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
 	{ name="NeonOrangeOrange", email="neonorangeorange@gmail.com" }
 ]
@@ -23,4 +23,3 @@ docs = ["mkdocs"]
 Homepage = "https://neonorangeorange.github.io/hello-NOO/"
 Documentation = "https://neonorangeorange.github.io/hello-NOO/"
 Source = "https://github.com/NeonOrangeOrange/hello-NOO"
-Issues = "https://github.com/NeonOrangeOrange/hello-NOO/issues"
