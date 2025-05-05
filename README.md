@@ -2,9 +2,9 @@
 
 This is an example repository for a python package, for my own reference.
 
-PyPi Page: [https://pypi.org/project/hello-NOO/]()
-GitHub Pages: [https://neonorangeorange.github.io/hello-NOO/]()
-GitHub Repository: [https://github.com/NeonOrangeOrange/hello-NOO]()
+PyPi Page: [](https://pypi.org/project/hello-NOO/)
+GitHub Pages: [](https://neonorangeorange.github.io/hello-NOO/)
+GitHub Repository: [](https://github.com/NeonOrangeOrange/hello-NOO)
 
 ---
 
