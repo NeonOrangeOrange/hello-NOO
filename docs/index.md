@@ -1,15 +1,23 @@
+---
 # hello-NOO Python Package
 
 This is an example repository for a python package, for my own reference.
 
-[PyPi Page](https://pypi.org/project/hello-NOO/)
-
-[Documentation (GitHub Pages)](https://neonorangeorange.github.io/hello-NOO/)
-
-[GitHub Repository](https://github.com/NeonOrangeOrange/hello-NOO)
 
 ---
+PyPI:
 
+[![PyPi Version](https://img.shields.io/pypi/v/hello-NOO.svg)](https://pypi.org/project/hello-NOO/)
+[![PyPi Version](https://img.shields.io/pypi/dm/hello-NOO.svg)](https://pypi.org/project/hello-NOO/)
+
+GitHub: 
+
+[![GitHub Tag](https://img.shields.io/github/v/tag/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO)
+[![GitHub Downloads](https://img.shields.io/github/downloads/NeonOrangeOrange/hello-NOO/total)](https://neonorangeorange.github.io/hello-NOO/)
+[![GitHub License](https://img.shields.io/github/license/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO/blob/main/LICENSE)
+[![GitHub Pages Website](https://img.shields.io/website?url=http%3A//neonorangeorange.github.io/hello-NOO/)](https://neonorangeorange.github.io/hello-NOO/)
+
+---
 ## Install
 
 Not that you would want to, but you can install with 
@@ -25,8 +33,8 @@ Developer install
 3. Activate the virtual environment: (linux) `source .venv/bin/activate`
 4. Install the package locally: (linux) `pip install -e ./[dev,docs]`
 
----
 
+---
 ## Building
 
 ```bash
@@ -41,8 +49,8 @@ twine check dist/*
 ```
 
 
----
 
+---
 ## Upload to PyPi
 
 Once your account is set up, run
@@ -52,8 +60,8 @@ twine upload --verbose --repository pypi dist/*
 ```
 
 
----
 
+---
 ## Other Notes
 
 To reset the installation
@@ -63,8 +71,8 @@ pip freeze --exlucde hello-NOO | xargs pip uninstall -y
 pip uninstall hello-NOO
 ```
 
----
 
+---
 ## Resources
 
 <https://pypi.org/classifiers/>
