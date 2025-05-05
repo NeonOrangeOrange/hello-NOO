@@ -12,8 +12,8 @@ PyPI:
 
 GitHub: 
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO)
-[![GitHub Downloads](https://img.shields.io/github/downloads/NeonOrangeOrange/hello-NOO/total)](https://neonorangeorange.github.io/hello-NOO/)
+[![GitHub Tag](https://img.shields.io/github/v/tag/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO/releases)
+[![GitHub Downloads](https://img.shields.io/github/downloads/NeonOrangeOrange/hello-NOO/total)](https://github.com/NeonOrangeOrange/hello-NOO/releases)
 [![GitHub License](https://img.shields.io/github/license/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO/blob/main/LICENSE)
 [![GitHub Pages Website](https://img.shields.io/website?url=http%3A//neonorangeorange.github.io/hello-NOO/)](https://neonorangeorange.github.io/hello-NOO/)
 
