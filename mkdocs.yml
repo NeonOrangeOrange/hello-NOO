@@ -8,3 +8,6 @@ theme:
 
 nav:
   - "Home": index.md
+  - "Making a Python Project": making-a-python-project.md
+  - "Documentation Guide": documentation-guide.md
+  - "Packaging Guide": packaging-guide.md
