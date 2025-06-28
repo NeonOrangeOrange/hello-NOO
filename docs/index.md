@@ -12,10 +12,12 @@ PyPI:
 
 GitHub: 
 
-[![GitHub Tag](https://img.shields.io/github/v/tag/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO)
-[![GitHub Downloads](https://img.shields.io/github/downloads/NeonOrangeOrange/hello-NOO/total)](https://neonorangeorange.github.io/hello-NOO/)
+[![GitHub Tag](https://img.shields.io/github/v/tag/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO/releases)
+[![GitHub Downloads](https://img.shields.io/github/downloads/NeonOrangeOrange/hello-NOO/total)](https://github.com/NeonOrangeOrange/hello-NOO/releases)
 [![GitHub License](https://img.shields.io/github/license/NeonOrangeOrange/hello-NOO)](https://github.com/NeonOrangeOrange/hello-NOO/blob/main/LICENSE)
 [![GitHub Pages Website](https://img.shields.io/website?url=http%3A//neonorangeorange.github.io/hello-NOO/)](https://neonorangeorange.github.io/hello-NOO/)
+
+
 
 ---
 ## Install
@@ -31,11 +33,27 @@ Developer install
 1. Clone this repository and `cd` into it.
 2. Create a virtual environment: `python3 -m venv .venv`
 3. Activate the virtual environment: (linux) `source .venv/bin/activate`
-4. Install the package locally: (linux) `pip install -e ./[dev,docs]`
+4. Install the package locally (`-e` for live edits): (linux) `pip install -e ./[dev,docs]`
+
+
+
+--
+## Import
+
+This package is spelled differently for importing
+
+```python
+import hello_noo
+```
+
 
 
 ---
 ## Building
+
+Make sure you have both `build` and `twine` installed to build a distribution
+
+To build:
 
 ```bash
 # Build a source distribution (stored in dist/)

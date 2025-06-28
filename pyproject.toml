@@ -1,13 +1,13 @@
 [project]
 name = "hello-NOO"
-version = "0.0.3"
+version = "0.1.0"
 authors = [
 	{ name="NeonOrangeOrange", email="neonorangeorange@gmail.com" }
 ]
 description = "A small personal example package"
 readme = "README.md"
 classifiers = [
-	"Development Status :: 2 - Pre-Alpha",
+	"Development Status :: 3 - Alpha",
 	"Programming Language :: Python :: 3",
 	"Operating System :: OS Independent",
 ]

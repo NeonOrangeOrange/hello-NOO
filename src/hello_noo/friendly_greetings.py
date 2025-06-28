@@ -1,5 +1,5 @@
 
-from . import greetings
+from . import greetings as _greetings
 
 def greet_with_name(greeting, name):
     print(greeting +',', name+'!')
@@ -7,4 +7,4 @@ def greet_with_name(greeting, name):
 
 if __name__ == "__main__":
     greet_with_name("Welcome", "Python")
-    greet_with_name(greetings.hi(), "Python")
+    greet_with_name(_greetings.hi(), "Python")
